@@ -18,12 +18,11 @@ playerEl.textContent = player.name + ": $" + player.chips;
 
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1;
-    if (randomNumber > 10) {
-        return 10;
-    } else if (randomNumber === 1) {
-        return 11;
-    } else {
-        return randomNumber;
+    if (randomNumber === 11) {
+        return 1;
+    }
+    else {
+        return randomNumber
     }
 }
 
@@ -109,11 +108,11 @@ function getCardName(cardValue) {
         return "nine";
     } else if (cardValue === 10) {
         return "ten";
-    } else if (cardValue === 11) {
-        return "jack";
     } else if (cardValue === 12) {
-        return "queen";
+        return "jack";
     } else if (cardValue === 13) {
+        return "queen";
+    } else if (cardValue === 14) {
         return "king";
     } else {
         return cardValue.toString();
