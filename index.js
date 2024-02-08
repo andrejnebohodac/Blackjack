@@ -33,7 +33,7 @@ function startGame() {
         let secondCard = getRandomCard();
         cards = [firstCard, secondCard];
         sum = firstCard + secondCard;
-        if (isAlive === false || hasBlackJack === true) {
+        if (isAlive === false) {
             player.chips -= 50;
             playerEl.textContent = player.name + ": $" + player.chips;
         }
@@ -62,6 +62,7 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!";
         hasBlackJack = true;
+        isAlive = false;
         player.chips += 100;
         playerEl.textContent = player.name + ": $" + player.chips;
     } else {
