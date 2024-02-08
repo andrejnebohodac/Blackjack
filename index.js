@@ -33,7 +33,7 @@ function startGame() {
         let secondCard = getRandomCard();
         cards = [firstCard, secondCard];
         sum = firstCard + secondCard;
-        if (isAlive === false) {
+        if (isAlive === false || hasBlackJack === true) {
             player.chips -= 50;
             playerEl.textContent = player.name + ": $" + player.chips;
         }
