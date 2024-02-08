@@ -1,0 +1,162 @@
+.rye-regular {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.disco {
+    font-family: "Workbench", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Rye', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("images/table.png");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.566);
+}
+
+h2 {
+    font-family: 'Workbench', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-style: normal;
+    font-size: 29px;
+}
+
+#dealer {
+    width: 80px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+#bet {
+    font-size: 18px;
+}
+
+.table {
+    font-size: 20px;
+}
+
+button {
+    color: #016f32;
+    width: 200px;
+    height: 45px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+    font-size: 16px;
+    border: 2px solid rgb(91, 89, 4);
+    border-radius: 6px;
+    display: block;
+    margin: 10px auto;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.645);
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgb(255, 230, 0);
+    cursor: pointer;
+}
+
+#player-el {
+    margin-top: 22px;
+    font-size: 20px;
+}
+
+.playing-card {
+    width: 65px;
+    display: none;
+}
+
+#cards-el img {
+    width: 93px;
+    height: auto;
+}
+
+#neon {
+    border: #d4e20b dotted 7px;
+    border-radius: 20px;
+    background: url("images/red-bricks.png");
+    width: 530px;
+    display: block;
+    margin: 0 auto;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    #neon {
+        width: 300px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #dealer {
+        width: 55px;
+        margin-top: 30px;
+    }
+
+    #message-el {
+        font-size: 18px;
+    }
+
+    #bet {
+        font-size: 16px;
+    }
+
+    #cards-el img {
+        width: 90px;
+        height: auto;
+    }
+
+    button {
+        width: 180px;
+        height: 40px;
+    }
+
+    #player-el {
+        font-size: 16px;
+    }
+
+    .table {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+
+    #neon {
+        width: 270px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
