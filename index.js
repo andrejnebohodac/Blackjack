@@ -84,7 +84,7 @@ function newCard() {
 }
 
 function showAlert() {
-    alert("YOU LOST, PISS OFF!");
+    alert("YOU LOST...");
 }
 
 function getCardName(cardValue) {
